@@ -1,0 +1,31 @@
+@import 'node_modules/azure-devops-ui/Core/_platformCommon.scss';
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
