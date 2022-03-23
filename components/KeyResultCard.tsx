@@ -41,6 +41,12 @@ export default class KeyResultCard extends React.Component<WorkItemInfo, any> {
               ></IdentityCardHeaderElement>
             </HeaderDescription>
           </HeaderTitleArea>
+          <Toggle
+            offText={'Off'}
+            onText={'On'}
+            checked={this.props.IsTracking}
+            onChange={(event, value) => (firstToggle.value = value)}
+          />
         </CustomHeader>
       </div>
     );

@@ -23,6 +23,8 @@ import { HeaderCommandBar } from 'azure-devops-ui/HeaderCommandBar';
 import { commandBarItemsAdvanced } from './HeaderData';
 import { Spinner } from 'azure-devops-ui/Spinner';
 
+import { Toggle } from 'azure-devops-ui/Toggle';
+
 import {
   ObservableValue,
   ObservableArray,

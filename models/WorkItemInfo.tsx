@@ -8,4 +8,5 @@ export default interface WorkItemInfo extends WorkItem {
   Title: string;
   Icon: WorkItemIcon;
   Type: WorkItemType;
+  IsTracking: boolean;
 }
