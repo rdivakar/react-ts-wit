@@ -71,7 +71,6 @@ export default class Wit extends React.Component {
                 <HeaderTitleArea>
                   <HeaderTitleRow>
                     <HeaderTitle
-                      aria
                       ariaLevel={1}
                       className="text-ellipsis"
                       titleSize={TitleSize.Large}
