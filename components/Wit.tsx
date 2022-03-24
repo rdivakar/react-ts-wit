@@ -23,8 +23,6 @@ import { HeaderCommandBar } from 'azure-devops-ui/HeaderCommandBar';
 import { commandBarItemsAdvanced } from './HeaderData';
 import { Spinner } from 'azure-devops-ui/Spinner';
 
-import { Toggle } from 'azure-devops-ui/Toggle';
-
 import {
   ObservableValue,
   ObservableArray,
@@ -70,14 +68,10 @@ export default class Wit extends React.Component {
               style={{ flex: 2, textAlign: 'right' }}
             >
               <CustomHeader className="bolt-header-with-commandbar">
-                <HeaderIcon
-                  className="bolt-table-status-icon-large"
-                  iconProps={{ render: this.renderStatus }}
-                  titleSize={TitleSize.Large}
-                />
                 <HeaderTitleArea>
                   <HeaderTitleRow>
                     <HeaderTitle
+                      aria
                       ariaLevel={1}
                       className="text-ellipsis"
                       titleSize={TitleSize.Large}

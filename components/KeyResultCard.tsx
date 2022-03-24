@@ -15,8 +15,11 @@ import { Link } from 'azure-devops-ui/Components/Link/Link';
 import { Image } from 'azure-devops-ui/Image';
 import { Header } from 'azure-devops-ui/Header';
 import { IdentityCardHeaderElement } from 'azure-devops-ui/Identity';
+import { Toggle } from 'azure-devops-ui/Toggle';
 
 export default class KeyResultCard extends React.Component<WorkItemInfo, any> {
+  private onChangeTracking(event, value): void {}
+
   private renderCustomHeader(): JSX.Element {
     return (
       <div>
@@ -45,7 +48,7 @@ export default class KeyResultCard extends React.Component<WorkItemInfo, any> {
             offText={'Off'}
             onText={'On'}
             checked={this.props.IsTracking}
-            onChange={(event, value) => (firstToggle.value = value)}
+            onChange={this.onChangeTracking}
           />
         </CustomHeader>
       </div>
